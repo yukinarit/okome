@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "okome-examples"
+version = "0.1.0"
+description = ""
+authors = ["yukinarit <yukinarit84@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+dataclasses = {version = "*", python = "<3.7"}
+okome = {path = ".."}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

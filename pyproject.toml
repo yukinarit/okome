@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "okome"
+version = "0.0.1"
+description = "dataclass comment parser"
+authors = ["yukinarit <yukinarit84@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+dataclasses = {version = "*", python = "<3.7"}
+
+[tool.poetry.dev-dependencies]
+pysen = {version = "0.9.1", extras = ["lint"]}
+pytest = "^6.2.5"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pysen]
+version = "0.9"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+mypy_preset = "strict"
+line_length = 119
+py_version = "py37"
+[[tool.pysen.lint.mypy_targets]]
+  paths = ["."]
