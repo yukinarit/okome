@@ -1,4 +1,4 @@
-# `okome`
+# `okome` 🍚
 
 *dataclass comment parser*
 
